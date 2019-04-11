@@ -1,25 +1,25 @@
 
 function angkaPrima(a) {
-    var  hasilCek= ''
+    var  hasil= ''
     if (a < 2) {
-        hasilCek = 'false';
+        hasil = 'false';
     }
     else if (a ==3 ) {
-        hasilCek = 'true';
+        hasil= 'true';
     }
     else if (a == 2 ) {
-        hasilCek = 'true';
+        hasil = 'true';
     }
     else {
         for (i = 2; i < a/2; i++) {
-            hasilCek = 'true';
+            hasil = 'true';
             if (a % i == 0) {
-                hasilCek = 'false';
+                hasil= 'false';
                 i = a;
             }
         }
     }
-    return hasilCek;
+    return hasil;
 } 
 console.log(angkaPrima(7)); // true
 console.log(angkaPrima(6)); // false
